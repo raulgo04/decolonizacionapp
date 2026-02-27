@@ -156,7 +156,7 @@ const slidesData = [
       "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/guinea2.jpg",
       "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/guinea3.jpg"
     ],
-    text: "Esto es el Parque del Retiro de Madrid",
+    text: "¿De dónde y cuándo créeis que son estas fotos?",
     instructions: "Pulsa para ampliar las imágenes.",
   },
 
