@@ -153,8 +153,8 @@ const slidesData = [
     type: "double-image",
     bgColor: "#7a6220",
     images: [
-      "https://www.inclusion.gob.es/documents/1746029/1746341/guinea2.jpg",
-      "https://www.inclusion.gob.es/documents/1746029/1746341/guinea3.jpg"
+      "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/guinea2.jpg",
+      "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/guinea3.jpg"
     ],
     text: "Esto es el Parque del Retiro de Madrid",
     instructions: "Pulsa para ampliar las imágenes.",
