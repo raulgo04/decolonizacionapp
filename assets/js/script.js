@@ -37,12 +37,14 @@ const slidesData = [
     question: "Arrastra cada palabra al lado del color que creas conveniente."
   },
 
-  // 3. COMPARADOR (AZUL OSCURO)
+ // 3. COMPARADOR (AZUL OSCURO)
   {
     type: "image-compare",
     bgColor: "#0d3b4f",
     before: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3E0pnMATl3YwX8o62mXBZ_UfqK1QQNavxb1inHVv-26WNIvPHb6_JXNxVHcTHvnAIGtCt1Kuoj6sUYSoU8V3HUfW4NVGrIehNmAQpscx5YeYPJ3-_MFG6uew03IhfkORqE77S7QSvE6p/s1600/DSC_0024.JPG",
     after: "http://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1awyyz3wX7t70KnvUBc10f5sZCugYEZgo5w&s",
+    labelBefore: "Imagen 1",
+    labelAfter: "Imagen 2",
     question: "Desliza para comparar ambas imágenes."
   },
 
