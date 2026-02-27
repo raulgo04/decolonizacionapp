@@ -265,7 +265,7 @@ function renderSlide() {
       <div class="labels-pool">
         <div class="label-box" draggable="true" data-target="red">Naturaleza</div>
         <div class="label-box" draggable="true" data-target="yellow">Desierto</div>
-        <div class="label-box" draggable="true" data-target="green">Templo chino</div>
+        <div class="label-box" draggable="true" data-target="green">Religión</div>
       </div>
       <p class="matching-instructions">${slide.instructions || ""}</p>
     `;
