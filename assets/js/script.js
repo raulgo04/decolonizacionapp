@@ -117,6 +117,18 @@ const slidesData = [
     text: "¿Conocéis estos edificios?",
     instructions: "Pulsa para ampliar la imagen."
   },
+  
+  // 6. RETIRO 2–3 (ROJO OSCURO)
+  {
+    type: "double-image-text",
+    bgColor: "#7b1e2b",
+    images: [
+      "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/retiro2.PNG",
+      "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/retiro3.PNG"
+    ],
+    text: "Esto es el Parque del Retiro de Madrid",
+    instructions: "Pulsa para ampliar las imágenes."
+  },
 
   // 10. ANTROPOLOGÍA INVISIBLE (ROJO OSCURO)
   {
