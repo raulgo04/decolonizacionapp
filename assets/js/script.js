@@ -156,8 +156,8 @@ const slidesData = [
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea2.jpg",
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea3.jpg"
     ],
-    text: "¿Dónde y cuándo créeis que es?",
-    instructions: "Pulsa para ampliar la imagen.",
+    text: "Esto es el Parque del Retiro de Madrid",
+    instructions: "Pulsa para ampliar las imágenes.",
   },
 
   // 13. ÁFRICA ÉTNICA (OCRE OSCURO)
