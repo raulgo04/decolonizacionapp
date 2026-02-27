@@ -150,7 +150,7 @@ const slidesData = [
 
   // 12. GUINEA 2–3 (OCRE OSCURO)
   {
-    type: "double-image",
+    type: "double-image-text",
     bgColor: "#7a6220",
     images: [
       "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/guinea2.jpg",
@@ -180,7 +180,7 @@ const slidesData = [
 
   // 15. VERDE — dos fotos (VERDE OSCURO)
   {
-    type: "double-image",
+    type: "double-image-text",
     bgColor: "#1f4f34",
     images: [
       "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/america1.jpg",
