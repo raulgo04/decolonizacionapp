@@ -140,12 +140,12 @@ const slidesData = [
   {
     type: "double-image",
     bgColor: "#7a6220",
-    text: "¿Dónde y cuándo créeis que es?",
-    instructions: "Pulsa para ampliar la imagen.",
     images: [
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea2.jpg",
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea3.jpg"
-    ]
+    ],
+    text: "¿Dónde y cuándo créeis que es?",
+    instructions: "Pulsa para ampliar la imagen.",
   },
 
   // 13. ÁFRICA ÉTNICA (OCRE OSCURO)
@@ -170,12 +170,13 @@ const slidesData = [
   {
     type: "double-image",
     bgColor: "#1f4f34",
-    text: "¿Son realistas estas representaciones",
-    instructions: "Pulsa para ampliar la imagen.",
     images: [
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXSaiLiG_Dw4AildQFRF9IrjLjzcYkx-oT-8rEZhj0UV3hIMffnHNEnmQ0lmP62trF1yaZPKywvjbqtG5WMnosk8sxFwkdDYmZ37gnyIHl0YLImh3aqoc0QvGGNU5f945NqYe689TE9A4/s1600/t0s9dCfIOdX02xqNWNwPyK3Vund.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg06aYfiu8cUsj4097gISTl_vLOAQmAj5mw&s"
-    ]
+    ],
+    text: "¿Son realistas estas representaciones",
+    instructions: "Pulsa para ampliar la imagen.",
+
   },
 
   // 16. VERDE — Vitrina América épicas (VERDE OSCURO)
