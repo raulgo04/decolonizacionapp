@@ -34,7 +34,7 @@ const slidesData = [
     type: "matching",
     bgColor: "#0d3b4f",
     title: "La cultura nos condiciona",
-    question: "Arrastra cada palabra al lado del color que creas conveniente."
+    instructions: "Arrastra cada palabra al lado del color que creas conveniente."
   },
 
  // 3. COMPARADOR (AZUL OSCURO)
@@ -45,7 +45,7 @@ const slidesData = [
     after: "http://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1awyyz3wX7t70KnvUBc10f5sZCugYEZgo5w&s",
     labelBefore: "Imagen 1",
     labelAfter: "Imagen 2",
-    question: "Desliza para comparar ambas imágenes."
+    instructions: "Desliza para comparar ambas imágenes."
   },
 
   // 4. TEXTO CATÓLICO (ROJO OSCURO)
@@ -54,7 +54,7 @@ const slidesData = [
     bgColor: "#7b1e2b",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/textocatolicoresaltado.PNG",
     text: "¿Qué hay de raro en el texto?",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 5. FILIPINAS (ROJO OSCURO)
@@ -63,7 +63,7 @@ const slidesData = [
     bgColor: "#7b1e2b",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/filipinasahora.PNG",
     text: "Filipinas ahora",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 6. RETIRO 2–3 (ROJO OSCURO)
@@ -75,7 +75,7 @@ const slidesData = [
       "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/retiro3.PNG"
     ],
     text: "¿Qué diferencias veis? ¿Es real o estereotipado?",
-    question: "Pulsa para ampliar las imágenes."
+    instructions: "Pulsa para ampliar las imágenes."
   },
 
   // 7. ELECCIÓN ÍCONO (ROJO OSCURO)
@@ -103,7 +103,7 @@ const slidesData = [
     bgColor: "#7b1e2b",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/retiro1.PNG",
     text: "¿Dónde creéis que es?",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 9. PALACIO + ENTORNO (ROJO OSCURO)
@@ -115,7 +115,7 @@ const slidesData = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/98/5c/fd/edificio-y-entorno.jpg"
     ],
     text: "¿Conocéis estos edificios?",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 10. ANTROPOLOGÍA INVISIBLE (ROJO OSCURO)
@@ -124,7 +124,7 @@ const slidesData = [
     bgColor: "#7b1e2b",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiP-NmUbg0A07cthvmB2XKzwk27byuQ7wBNQ&s",
     text: "Vitrina de Antropología Invisible.",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 11. AFROTOPIA (OCRE OSCURO)
@@ -133,7 +133,7 @@ const slidesData = [
     bgColor: "#7a6220",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/afrotopia.PNG",
     text: "Afrotopía",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 12. GUINEA 2–3 (OCRE OSCURO)
@@ -141,7 +141,7 @@ const slidesData = [
     type: "double-image",
     bgColor: "#7a6220",
     text: "¿Dónde y cuándo créeis que es?",
-    question: "Pulsa para ampliar la imagen.",
+    instructions: "Pulsa para ampliar la imagen.",
     images: [
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea2.jpg",
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea3.jpg"
@@ -154,7 +154,7 @@ const slidesData = [
     bgColor: "#7a6220",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Africa_ethnic_groups_1996.jpg",
     text: "¿Cómo se representan los grupos étnicos",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 14. YORUBA (OCRE OSCURO)
@@ -163,7 +163,7 @@ const slidesData = [
     bgColor: "#7a6220",
     image: "https://image.pbs.org/poster_images/assets/sj14-vid-yorubarel.jpg",
     text: "Cultura Yoruba",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 15. VERDE — dos fotos (VERDE OSCURO)
@@ -171,7 +171,7 @@ const slidesData = [
     type: "double-image",
     bgColor: "#1f4f34",
     text: "¿Son realistas estas representaciones",
-    question: "Pulsa para ampliar la imagen.",
+    instructions: "Pulsa para ampliar la imagen.",
     images: [
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXSaiLiG_Dw4AildQFRF9IrjLjzcYkx-oT-8rEZhj0UV3hIMffnHNEnmQ0lmP62trF1yaZPKywvjbqtG5WMnosk8sxFwkdDYmZ37gnyIHl0YLImh3aqoc0QvGGNU5f945NqYe689TE9A4/s1600/t0s9dCfIOdX02xqNWNwPyK3Vund.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg06aYfiu8cUsj4097gISTl_vLOAQmAj5mw&s"
@@ -184,7 +184,7 @@ const slidesData = [
     bgColor: "#1f4f34",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/vitrinaamericaepicas.PNG",
     text: "¿Son todos los objetos de la misma época?",
-    question: "Pulsa para ampliar la imagen."
+    instructions: "Pulsa para ampliar la imagen."
   },
 
   // 17. SLIDE FINAL - AGRADECIMIENTO
@@ -192,7 +192,7 @@ const slidesData = [
     type: "text",
     bgColor: "#001219",
     text: "Gracias por hacer la visita",
-    question: "Esperamos que apliques la visión decolonial la próxima vez que visites un museo."
+    instructions: "Esperamos que apliques la visión decolonial la próxima vez que visites un museo."
   }
 ];
 
