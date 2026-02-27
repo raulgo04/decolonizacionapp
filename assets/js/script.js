@@ -33,7 +33,7 @@ const slidesData = [
   {
     type: "matching",
     bgColor: "#0d3b4f",
-    title: "Asocia colores y palabras",
+    title: "La cultura nos condiciona",
     instructions: "Arrastra cada palabra al lado del color que prefieras."
   },
 
@@ -226,7 +226,7 @@ function renderSlide() {
 
   else if (slide.type === "image-compare") {
     inner += `
-      <h2>Comparador de imágenes</h2>
+      <h2>Sala de los Orígenes</h2>
       <p>${slide.question || ""}</p>
       <div class="image-slider-container">
         <div class="image base" style="background-image:url('${slide.after}')"></div>
