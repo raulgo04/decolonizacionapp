@@ -34,7 +34,7 @@ const slidesData = [
     type: "matching",
     bgColor: "#0d3b4f",
     title: "La cultura nos condiciona",
-    instructions: "Arrastra cada palabra al lado del color que prefieras."
+    question: "Arrastra cada palabra al lado del color que creas conveniente."
   },
 
   // 3. COMPARADOR (AZUL OSCURO)
@@ -43,8 +43,6 @@ const slidesData = [
     bgColor: "#0d3b4f",
     before: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3E0pnMATl3YwX8o62mXBZ_UfqK1QQNavxb1inHVv-26WNIvPHb6_JXNxVHcTHvnAIGtCt1Kuoj6sUYSoU8V3HUfW4NVGrIehNmAQpscx5YeYPJ3-_MFG6uew03IhfkORqE77S7QSvE6p/s1600/DSC_0024.JPG",
     after: "http://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1awyyz3wX7t70KnvUBc10f5sZCugYEZgo5w&s",
-    labelBefore: "Imagen 1",
-    labelAfter: "Imagen 2",
     question: "Desliza para comparar ambas imágenes."
   },
 
@@ -53,7 +51,8 @@ const slidesData = [
     type: "image-zoom-text",
     bgColor: "#7b1e2b",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/textocatolicoresaltado.PNG",
-    text: "¿Qué hay de raro en el texto?"
+    text: "¿Qué hay de raro en el texto?",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 5. FILIPINAS (ROJO OSCURO)
@@ -61,7 +60,8 @@ const slidesData = [
     type: "image-zoom-text",
     bgColor: "#7b1e2b",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/filipinasahora.PNG",
-    text: "¿Qué diferencias veis?"
+    text: "Filipinas ahora",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 6. RETIRO 2–3 (ROJO OSCURO)
@@ -72,7 +72,8 @@ const slidesData = [
       "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/retiro2.PNG",
       "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/retiro3.PNG"
     ],
-    text: "¿Qué diferencias veis? ¿Es real o estereotipado?"
+    text: "¿Qué diferencias veis? ¿Es real o estereotipado?",
+    question: "Pulsa para ampliar las imágenes."
   },
 
   // 7. ELECCIÓN ÍCONO (ROJO OSCURO)
@@ -80,6 +81,7 @@ const slidesData = [
     type: "image-choice",
     bgColor: "#7b1e2b",
     question: "¿Qué imagen representa mejor el icono de la sección?",
+    instructions: "Pulsa en tu elección.",
     options: [
       {
         img: "https://fundacion-antama.org/wp-content/uploads/2019/10/201910-Trigo-1024x725.jpg",
@@ -98,7 +100,8 @@ const slidesData = [
     type: "image-text",
     bgColor: "#7b1e2b",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/retiro1.PNG",
-    text: "¿Dónde creéis que es?"
+    text: "¿Dónde creéis que es?",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 9. PALACIO + ENTORNO (ROJO OSCURO)
@@ -109,7 +112,8 @@ const slidesData = [
       "https://www.madrid.es/UnidadWeb/UGBBDD/ObjetosExternos/Ficheros/sicweb/monograficos/contenidos/imgdocsic/palaciocristal.jpg",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/98/5c/fd/edificio-y-entorno.jpg"
     ],
-    text: "¿Conocéis estos edificios?"
+    text: "¿Conocéis estos edificios?",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 10. ANTROPOLOGÍA INVISIBLE (ROJO OSCURO)
@@ -117,7 +121,8 @@ const slidesData = [
     type: "image-text",
     bgColor: "#7b1e2b",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiP-NmUbg0A07cthvmB2XKzwk27byuQ7wBNQ&s",
-    text: "Vitrina de Antropología Invisible."
+    text: "Vitrina de Antropología Invisible.",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 11. AFROTOPIA (OCRE OSCURO)
@@ -125,13 +130,16 @@ const slidesData = [
     type: "image-text",
     bgColor: "#7a6220",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/afrotopia.PNG",
-    text: ""
+    text: "Afrotopía",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 12. GUINEA 2–3 (OCRE OSCURO)
   {
     type: "double-image",
     bgColor: "#7a6220",
+    text: "¿Dónde y cuándo créeis que es?",
+    question: "Pulsa para ampliar la imagen.",
     images: [
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea2.jpg",
       "https://www.inclusion.gob.es/documents/1746029/1746341/guinea3.jpg"
@@ -143,7 +151,8 @@ const slidesData = [
     type: "image-zoom-text",
     bgColor: "#7a6220",
     image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Africa_ethnic_groups_1996.jpg",
-    text: "¿Cómo se representan los grupos étnicos?"
+    text: "¿Cómo se representan los grupos étnicos",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 14. YORUBA (OCRE OSCURO)
@@ -151,13 +160,16 @@ const slidesData = [
     type: "image-text",
     bgColor: "#7a6220",
     image: "https://image.pbs.org/poster_images/assets/sj14-vid-yorubarel.jpg",
-    text: ""
+    text: "Cultura Yoruba",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 15. VERDE — dos fotos (VERDE OSCURO)
   {
     type: "double-image",
     bgColor: "#1f4f34",
+    text: "¿Son realistas estas representaciones",
+    question: "Pulsa para ampliar la imagen.",
     images: [
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXSaiLiG_Dw4AildQFRF9IrjLjzcYkx-oT-8rEZhj0UV3hIMffnHNEnmQ0lmP62trF1yaZPKywvjbqtG5WMnosk8sxFwkdDYmZ37gnyIHl0YLImh3aqoc0QvGGNU5f945NqYe689TE9A4/s1600/t0s9dCfIOdX02xqNWNwPyK3Vund.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg06aYfiu8cUsj4097gISTl_vLOAQmAj5mw&s"
@@ -169,7 +181,8 @@ const slidesData = [
     type: "image-text",
     bgColor: "#1f4f34",
     image: "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/vitrinaamericaepicas.PNG",
-    text: "¿Son todos los objetos de la misma época?"
+    text: "¿Son todos los objetos de la misma época?",
+    question: "Pulsa para ampliar la imagen."
   },
 
   // 17. SLIDE FINAL - AGRADECIMIENTO
@@ -177,7 +190,7 @@ const slidesData = [
     type: "text",
     bgColor: "#001219",
     text: "Gracias por hacer la visita",
-    subText: "Esperamos que esta mirada decolonizada te acompañe en futuras visitas."
+    question: "Esperamos que apliques la visión decolonial la próxima vez que visites un museo."
   }
 ];
 
