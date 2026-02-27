@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.app {
+  width: 390px;
+  height: 844px; /* Formato móvil estándar vertical */
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+/* PROGRESO */
+.progress {
+  height: 6px;
+  background: rgba(255,255,255,0.2);
+  z-index: 10;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+/* SLIDES */
+.slides {
+  flex: 1;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  padding: 24px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* texto arriba */
+  text-align: center;
+  transition: opacity 0.4s ease;
+  overflow-y: auto;
+}
+
+.slide h1,
+.slide h2,
+.slide h3 {
+  font-size: 2.05rem;      /* texto grande */
+  line-height: 1.22;
+  margin: 28px 0 14px;
+}
+
+.slide p {
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+.slide-counter {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  align-self: flex-end;
+}
+
+/* IMAGEN CENTRADA (una sola) */
+.center-image {
+  max-width: 92%;
+  max-height: 55vh;
+  border-radius: 16px;
+  margin: 18px auto 10px; /* centrada */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  display: block;
+  object-fit: contain;
+}
+
+/* DOBLE IMAGEN */
+.double-images {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.double-images img {
+  flex: 1 1 48%;
+  max-width: 48%;
+  max-height: 40vh;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* NAVEGACIÓN */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: rgba(0,0,0,0.2);
+}
+
+button {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* PORTADA */
+.cover-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.cover-image {
+  width: 92%;
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 260px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  display: block;
+  margin: 0 auto;
+}
+
+.cover-title {
+  font-size: 2.4rem;
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+.cover-subtitle {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.cover-button {
+  margin-top: 12px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgba(255,255,255,0.9);
+  color: #002b36;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+.cover-button:hover {
+  background: #fff;
+}
+
+/* COMPARADOR DE IMÁGENES */
+.image-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  height: 300px;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px auto 8px;
+}
+
+.image-slider-container .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-slider-container .image.overlay {
+  width: 50%; /* valor inicial; luego lo cambia el JS */
+}
+
+.image-slider-container .range-slider {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #f2f2f233;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+
+.image-slider-container .range-slider:hover {
+  background: #f2f2f21a;
+}
+
+/* Thumb barra vertical */
+.image-slider-container .range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 800px;
+  background: white;
+  cursor: move;
+  transition: all 300ms ease;
+}
+
+.image-slider-container .range-slider::-moz-range-thumb {
+  width: 6px;
+  height: 800px;
+  background: white;
+  cursor: move;
+}
+
+.slider-control {
+  z-index: 3;
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  top: 50%;
+  left: 50%; /* se actualiza con JS */
+  transform: translate(-60%, -50%);
+  cursor: grab;
+}
+
+.slider-control::after,
+.slider-control::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-control::after {
+  content: "";
+  right: 3px;
+}
+
+.slider-control::before {
+  content: "";
+  left: 3px;
+}
+
+.compare-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+/* ZOOM DE IMAGEN */
+.zoomable {
+  cursor: zoom-in;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.image-modal.show {
+  display: flex;
+}
+
+.image-modal img {
+  max-width: 95vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* JUEGO DE EMPAREJAR (drag & drop) */
+.matching-title {
+  margin-bottom: 8px;
+}
+
+.matching-grid {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.matching-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.color-box {
+  width: 80px;
+  height: 60px;
+  border-radius: 14px;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.color-red {
+  background: #8b1e3f;
+}
+
+.color-yellow {
+  background: #ffcc00;
+}
+
+.color-green {
+  background: #3ba56b;
+}
+
+.drop-zone {
+  flex: 1;
+  min-height: 60px;
+  border-radius: 14px;
+  border: 2px dashed rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.labels-pool {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label-box {
+  padding: 10px 12px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid rgba(255,255,255,0.7);
+  background: rgba(0,0,0,0.25);
+  cursor: grab;
+  user-select: none;
+}
+
+.label-box.dragging {
+  opacity: 0.7;
+}
+
+.box-linked {
+  box-shadow: 0 0 15px rgba(255,255,255,0.7);
+  border-color: #fff;
+}
+
+.matching-instructions {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* OPCIONES DE IMAGEN (image-choice) */
+.image-options {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.image-option {
+  flex: 1;
+  max-width: 48%;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.image-option img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ESTILOS DE ENCUESTA (poll, por si lo usas luego) */
+.poll-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.poll-option {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* COLORES DE SELECCIÓN PARA image-choice / poll */
+.blue {
+  border-color: #3498db !important;
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
+}
+
+.violet {
+  border-color: #9b59b6 !important;
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.6);
+}
+
+.yellow {
+  border-color: #f1c40f !important;
+  box-shadow: 0 0 20px rgba(241, 196, 15, 0.6);
+  color: #f1c40f;
+}
+
+.selected-other {
+  opacity: 0.3;
+  transform: scale(0.95);
+}
