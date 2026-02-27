@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experiencia interactiva - Visita decolonizada</title>
+<link rel="stylesheet" href=".././css/styles.css">
+ 
+</head>
+<body>
+
+<div class="app">
+
+  <div class="progress">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="slides" id="slides"></div>
+
+  <div class="nav" id="nav">
+    <button id="prev">←</button>
+    <button id="next">Siguiente →</button>
+  </div>
+
+</div>
+
+<!-- Modal para zoom de imágenes -->
+<div id="imageModal" class="image-modal">
+  <span class="image-modal-close" id="imageModalClose">&times;</span>
+  <img id="imageModalImg" src="" alt="Imagen ampliada">
+</div>
+
+ <script src=".././js/script.js"></script>
+</body>
+</html>
