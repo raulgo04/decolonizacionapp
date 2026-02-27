@@ -183,8 +183,8 @@ const slidesData = [
     type: "double-image",
     bgColor: "#1f4f34",
     images: [
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXSaiLiG_Dw4AildQFRF9IrjLjzcYkx-oT-8rEZhj0UV3hIMffnHNEnmQ0lmP62trF1yaZPKywvjbqtG5WMnosk8sxFwkdDYmZ37gnyIHl0YLImh3aqoc0QvGGNU5f945NqYe689TE9A4/s1600/t0s9dCfIOdX02xqNWNwPyK3Vund.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg06aYfiu8cUsj4097gISTl_vLOAQmAj5mw&s"
+      "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/america1.jpg",
+      "https://raw.githubusercontent.com/raulgo04/decolonizacionapp/refs/heads/main/assets/img/america2.jfif"
     ],
     text: "¿Son realistas estas representaciones",
     instructions: "Pulsa para ampliar la imagen.",
